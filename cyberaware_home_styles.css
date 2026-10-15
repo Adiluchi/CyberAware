@@ -1,0 +1,14 @@
+/* CyberAware — About and statistics sections */
+.about-cyberaware,.cyber-stats{margin:70px 0 0;padding:36px;border:1px solid #294d6e;border-radius:24px;background:linear-gradient(135deg,#10253f,#0b1b30)}
+.about-cyberaware h2,.cyber-stats h2{margin:14px 0 20px;color:#eaf3ff;font-size:clamp(28px,3.3vw,42px);line-height:1.15}
+.about-cyberaware>p{max-width:850px;color:#b9cbe0;font-size:17px;line-height:1.75}
+.about-features,.stats-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:26px}
+.about-features>div,.stat-card{padding:24px;border:1px solid #315475;border-radius:18px;background:#132c49}
+.about-features>div>span{display:block;margin-bottom:14px;font-size:28px}
+.about-features strong{display:block;color:#eaf3ff;font-size:18px}
+.about-features p,.stat-card p{color:#b9cbe0;line-height:1.6}
+.stat-card>strong{display:block;color:#4dcaff;font-size:clamp(28px,3vw,43px);letter-spacing:-1px}
+.stat-card a{color:#68d7ff;text-decoration:none;font-size:13px}
+.stat-card a:hover{text-decoration:underline}
+.stats-note{margin:20px 0 0;color:#91abc5;font-size:13px;line-height:1.6}
+@media(max-width:720px){.about-cyberaware,.cyber-stats{margin-top:42px;padding:22px}.about-features,.stats-grid{grid-template-columns:1fr}}

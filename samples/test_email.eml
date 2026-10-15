@@ -1,0 +1,10 @@
+From: "Example Support" <support@example.invalid>
+To: student@example.invalid
+Subject: URGENT: Verify your account
+Date: Thu, 08 Oct 2026 10:00:00 +0500
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+
+This is a fictional training email. Click immediately to verify your account:
+http://example.invalid/verify
+Do not enter any real passwords.
