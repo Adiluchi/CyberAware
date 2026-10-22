@@ -81,17 +81,17 @@
 {% elif page == 'threats' %}
 
 <section class="section-head">
-  <div class="eyebrow">CYBERAWARE THREAT INTELLIGENCE</div>
-  <h1>Live Cyber Threats</h1>
-  <p>
+  <div class="eyebrow" data-i18n="threatsEyebrow">CYBERAWARE THREAT INTELLIGENCE</div>
+  <h1 data-i18n="threatsTitle">Live Cyber Threats</h1>
+  <p data-i18n="threatsIntro">
     Explore real-world cybersecurity vulnerabilities
     and stay informed about emerging threats.
   </p>
 </section>
 
 <section class="threats-section">
-  <h2>Latest Known Exploited Vulnerabilities</h2>
-  <p>Data provided by CISA.</p>
+  <h2 data-i18n="threatsLatest">Latest Known Exploited Vulnerabilities</h2>
+  <p data-i18n="threatsSource">Data provided by CISA.</p>
 
 <div id="threats-container">
   {% if threats_error %}
