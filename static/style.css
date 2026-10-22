@@ -126,3 +126,60 @@
     height: 145px;
   }
 }
+/* LIVE CYBER THREATS */
+
+.threats-section {
+    margin: 60px 0;
+}
+
+.threats-section h2 {
+    margin-bottom: 15px;
+}
+
+#threats-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.threat-card {
+    background: rgba(12, 35, 58, 0.85);
+    border: 1px solid rgba(76, 202, 255, 0.25);
+    border-radius: 18px;
+    padding: 28px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    overflow-wrap: anywhere;
+}
+
+.threat-card:hover {
+    transform: translateY(-5px);
+    border-color: #4dcaff;
+}
+
+.threat-card h3 {
+    color: #4dcaff;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.threat-card p {
+    color: #b9cce0;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.threat-card strong {
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    #threats-container {
+        grid-template-columns: 1fr;
+    }
+
+    .threat-card {
+        padding: 20px;
+    }
+}
