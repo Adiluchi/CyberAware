@@ -338,3 +338,37 @@ Object.assign(strings.kk, {
 });
 
 applyLanguage();
+
+/* About Us — translations */
+
+Object.assign(strings.en, {
+  teamEyebrow: "MEET THE TEAM",
+  teamTitle: "About Us",
+  teamIntro: "Meet the people behind CyberAware.",
+  adilbekRole: "Development & Project Management",
+  adilbekBio: "Adilbek studies cybersecurity, has a background in Business Management in Dubai, and works in SMM. He enjoys communication, technology and creative projects.",
+  bekmukhanRole: "Documentation & Research",
+  bekmukhanBio: "Bekmukhan enjoys basketball, studies game design, loves travelling and regularly goes to the gym."
+});
+
+Object.assign(strings.ru, {
+  teamEyebrow: "НАША КОМАНДА",
+  teamTitle: "О нас",
+  teamIntro: "Познакомьтесь с командой CyberAware.",
+  adilbekRole: "Разработка и управление проектом",
+  adilbekBio: "Адильбек изучает кибербезопасность, ранее учился на бизнес-менеджменте в Дубае и занимается SMM. Любит общение, технологии и творческие проекты.",
+  bekmukhanRole: "Документация и исследования",
+  bekmukhanBio: "Бекмухан увлекается баскетболом, изучает гейм-дизайн, любит путешествовать и регулярно посещает спортзал."
+});
+
+Object.assign(strings.kk, {
+  teamEyebrow: "БІЗДІҢ КОМАНДА",
+  teamTitle: "Біз туралы",
+  teamIntro: "CyberAware жобасының командасымен танысыңыз.",
+  adilbekRole: "Әзірлеу және жобаны басқару",
+  adilbekBio: "Әділбек киберқауіпсіздікті оқиды, бұрын Дубайда бизнес-менеджмент саласында білім алған және SMM саласында жұмыс істейді. Қарым-қатынасты, технологияларды және шығармашылық жобаларды ұнатады.",
+  bekmukhanRole: "Құжаттама және зерттеу",
+  bekmukhanBio: "Бекмұхан баскетболмен айналысады, ойын дизайнын үйренеді, саяхаттағанды ұнатады және спортзалға тұрақты барады."
+});
+
+applyLanguage();
