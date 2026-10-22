@@ -78,6 +78,25 @@
 <section class="cards"><a class="card" href="/learn"><span class="emoji">📚</span><h2 data-i18n="learnTitle">Learn</h2><p data-i18n="learnDesc">Short cybersecurity lessons.</p></a><a class="card" href="/quiz"><span class="emoji">🧠</span><h2 data-i18n="quizTitle">Test yourself</h2><p data-i18n="quizDesc">Check your phishing awareness.</p></a><a class="card" href="/password"><span class="emoji">🔐</span><h2 data-i18n="passTitle">Password check</h2><p data-i18n="passDesc">Estimate password strength locally.</p></a><a class="card" href="/analyzer"><span class="emoji">📧</span><h2 data-i18n="analyzerTitle">Email analyzer</h2><p data-i18n="analyzerDesc">Inspect an EML email for basic warning signs.</p></a></section>
 {% elif page == 'learn' %}
 <section class="section-head"><div class="eyebrow">CYBERAWARE ACADEMY</div><h1 data-i18n="learnTitle">Learn</h1><p data-i18n="learnIntro">Start with three essential safety habits.</p></section><div id="lessons" class="cards three"></div>
+{% elif page == 'threats' %}
+
+<section class="section-head">
+  <div class="eyebrow">CYBERAWARE THREAT INTELLIGENCE</div>
+  <h1>Live Cyber Threats</h1>
+  <p>
+    Explore real-world cybersecurity vulnerabilities
+    and stay informed about emerging threats.
+  </p>
+</section>
+
+<section class="threats-section">
+  <h2>Latest Known Exploited Vulnerabilities</h2>
+  <p>Data provided by CISA.</p>
+
+  <div id="threats-container">
+    <p>Loading latest cyber threats...</p>
+  </div>
+</section>
 {% elif page == 'quiz' %}
 <section class="section-head"><div class="eyebrow">KNOWLEDGE CHECK</div><h1 data-i18n="quizTitle">Test yourself</h1><p data-i18n="quizIntro">Answer five questions and see your result.</p></section><div class="panel" id="quizBox"></div>
 {% elif page == 'password' %}
