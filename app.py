@@ -19,7 +19,34 @@ def learn():
 
 @app.route('/threats')
 def threats():
-    return render_template('index.html', page='threats')
+        url = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+
+    try:
+        response = requests.get(url, timeout=10)
+        response.raise_for_status()
+
+        data = response.json()
+        vulnerabilities = data.get('vulnerabilities', [])
+
+        vulnerabilities = sorted(
+            vulnerabilities,
+            key=lambda item: item.get('dateAdded', ''),
+            reverse=True
+        )[:10]
+
+        return render_template(
+            'index.html',
+            page='threats',
+            threats=vulnerabilities
+        )
+
+    except (requests.RequestException, ValueError):
+        return render_template(
+            'index.html',
+            page='threats',
+            threats=[],
+            threats_error=True
+        )
     
 @app.route('/quiz')
 def quiz():
