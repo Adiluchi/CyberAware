@@ -19,7 +19,7 @@ def learn():
 
 @app.route('/threats')
 def threats():
-        url = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+    url = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
 
     try:
         response = requests.get(url, timeout=10)
