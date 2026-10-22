@@ -93,9 +93,27 @@
   <h2>Latest Known Exploited Vulnerabilities</h2>
   <p>Data provided by CISA.</p>
 
-  <div id="threats-container">
-    <p>Loading latest cyber threats...</p>
-  </div>
+<div id="threats-container">
+  {% if threats_error %}
+    <p>Unable to load live threat data. Please try again later.</p>
+
+  {% elif threats %}
+    {% for threat in threats %}
+      <article class="threat-card">
+        <h3>{{ threat.cveID }}</h3>
+
+        <p><strong>Vendor:</strong> {{ threat.vendorProject }}</p>
+        <p><strong>Product:</strong> {{ threat.product }}</p>
+        <p><strong>Vulnerability:</strong> {{ threat.vulnerabilityName }}</p>
+        <p><strong>Date Added:</strong> {{ threat.dateAdded }}</p>
+        <p><strong>Description:</strong> {{ threat.shortDescription }}</p>
+      </article>
+    {% endfor %}
+
+  {% else %}
+    <p>No vulnerability data is currently available.</p>
+  {% endif %}
+</div>
 </section>
 {% elif page == 'quiz' %}
 <section class="section-head"><div class="eyebrow">KNOWLEDGE CHECK</div><h1 data-i18n="quizTitle">Test yourself</h1><p data-i18n="quizIntro">Answer five questions and see your result.</p></section><div class="panel" id="quizBox"></div>
