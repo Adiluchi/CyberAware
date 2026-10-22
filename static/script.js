@@ -372,3 +372,19 @@ Object.assign(strings.kk, {
 });
 
 applyLanguage();
+
+Object.assign(strings.en, {
+  adilbekName: "Adilbek",
+  bekmukhanName: "Bekmukhan"
+});
+
+Object.assign(strings.ru, {
+  adilbekName: "Адильбек",
+  bekmukhanName: "Бекмухан"
+});
+
+Object.assign(strings.kk, {
+  adilbekName: "Әділбек",
+  bekmukhanName: "Бекмұхан"
+});
+
