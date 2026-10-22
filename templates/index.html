@@ -102,11 +102,11 @@
       <article class="threat-card">
         <h3>{{ threat.cveID }}</h3>
 
-        <p><strong>Vendor:</strong> {{ threat.vendorProject }}</p>
-        <p><strong>Product:</strong> {{ threat.product }}</p>
-        <p><strong>Vulnerability:</strong> {{ threat.vulnerabilityName }}</p>
-        <p><strong>Date Added:</strong> {{ threat.dateAdded }}</p>
-        <p><strong>Description:</strong> {{ threat.shortDescription }}</p>
+        <p><strong data-i18n="threatVendor">Vendor:</strong> {{ threat.vendorProject }}</p>
+<p><strong data-i18n="threatProduct">Product:</strong> {{ threat.product }}</p>
+<p><strong data-i18n="threatVulnerability">Vulnerability:</strong> {{ threat.vulnerabilityName }}</p>
+<p><strong data-i18n="threatDate">Date Added:</strong> {{ threat.dateAdded }}</p>
+<p><strong data-i18n="threatDescription">Description:</strong> {{ threat.shortDescription }}</p>
       </article>
     {% endfor %}
 
