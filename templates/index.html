@@ -86,7 +86,7 @@
 <section class="section-head"><div class="eyebrow">PROJECT 4 · PHISHING EMAIL ANALYSIS</div><h1 data-i18n="analyzerTitle">Email analyzer</h1><p data-i18n="analyzerIntro">Upload a synthetic .eml sample for basic risk indicators. Do not upload private emails.</p></section><div class="panel"><form method="post" enctype="multipart/form-data"><label for="email_file" data-i18n="uploadLabel">Choose an .eml file (max 1 MB)</label><input id="email_file" type="file" name="email_file" accept=".eml" required><button class="btn" type="submit" data-i18n="analyzeButton">Analyze email</button></form>{% if error %}<p class="error">{{ error }}</p>{% endif %}{% if result %}<div class="result"><h2 data-i18n="resultTitle">Analysis results</h2><div class="score">{{ result.score }}<small>/100</small></div><p data-i18n="heuristic">Demonstration score only. A low score does not prove safety.</p><p><strong>Sender:</strong> {{ result.sender }}</p><p><strong>Subject:</strong> {{ result.subject }}</p><h3 data-i18n="warningsTitle">Warnings</h3><ul>{% for warning in result.warnings %}<li>{{ warning }}</li>{% else %}<li>No basic warning indicators found.</li>{% endfor %}</ul><h3>URLs</h3><ul>{% for url in result.urls %}<li class="break">{{ url }}</li>{% else %}<li>None detected</li>{% endfor %}</ul><h3>Attachments</h3><ul>{% for name in result.attachments %}<li>{{ name }}</li>{% else %}<li>None detected</li>{% endfor %}</ul></div>{% endif %}</div>
 {% endif %}
 <section class="team-section" id="about-us">
-  <div class="eyebrow">MEET THE TEAM</div>
+  <div class="eyebrow" data-i18n="teamEyebrow">MEET THE TEAM</div>
   <h2 data-i18n="teamTitle">About Us</h2>
   <p data-i18n="teamIntro">
     Meet the people behind CyberAware.
@@ -98,7 +98,7 @@
       <img src="{{ url_for('static', filename='adilbek.jpg') }}"
            alt="Adilbek" class="team-photo">
 
-      <h3>Adilbek</h3>
+      <h3 data-i18n="adilbekName">Adilbek</h3>
       <p class="team-role" data-i18n="adilbekRole">
         Development & Project Management
       </p>
@@ -113,7 +113,7 @@
       <img src="{{ url_for('static', filename='bekmukhan.jpg') }}"
            alt="Bekmukhan" class="team-photo">
 
-      <h3>Bekmukhan</h3>
+      <h3 data-i18n="bekmukhanName">Bekmukhan</h3>
       <p class="team-role" data-i18n="bekmukhanRole">
         Documentation & Research
       </p>
