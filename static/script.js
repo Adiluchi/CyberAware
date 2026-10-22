@@ -26,6 +26,29 @@ Object.assign(strings.kk, {
   threatsLatest: 'Соңғы белгілі пайдаланылып жатқан осалдықтар',
   threatsSource: 'Деректерді CISA ұсынған.'
 });
+Object.assign(strings.en, {
+  threatVendor: 'Vendor:',
+  threatProduct: 'Product:',
+  threatVulnerability: 'Vulnerability:',
+  threatDate: 'Date Added:',
+  threatDescription: 'Description:'
+});
+
+Object.assign(strings.ru, {
+  threatVendor: 'Производитель:',
+  threatProduct: 'Продукт:',
+  threatVulnerability: 'Уязвимость:',
+  threatDate: 'Дата добавления:',
+  threatDescription: 'Описание:'
+});
+
+Object.assign(strings.kk, {
+  threatVendor: 'Өндіруші:',
+  threatProduct: 'Өнім:',
+  threatVulnerability: 'Осалдық:',
+  threatDate: 'Қосылған күні:',
+  threatDescription: 'Сипаттама:'
+});
 let language = localStorage.getItem('cyberaware-lang') || 'en';
 if(!strings[language]) language='en';
 function applyLanguage(){const t=strings[language];document.documentElement.lang=language;document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.dataset.i18n;if(t[k])el.textContent=t[k]});document.querySelectorAll('[data-lang]').forEach(el=>el.classList.toggle('active',el.dataset.lang===language));renderLessons();renderQuiz();updatePassword()}
