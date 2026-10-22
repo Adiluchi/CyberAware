@@ -17,6 +17,10 @@ def home():
 def learn():
     return render_template('index.html', page='learn')
 
+@app.route('/threats')
+def threats():
+    return render_template('index.html', page='threats')
+    
 @app.route('/quiz')
 def quiz():
     return render_template('index.html', page='quiz')
