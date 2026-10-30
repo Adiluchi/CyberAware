@@ -390,31 +390,31 @@ applyLanguage();
 Object.assign(strings.en, {
   teamEyebrow: "MEET THE TEAM",
   teamTitle: "About Us",
-  teamIntro: "Meet the people behind CyberAware.",
-  adilbekRole: "Development & Project Management",
-  adilbekBio: "Adilbek studies cybersecurity, has a background in Business Management in Dubai, and works in SMM. He enjoys communication, technology and creative projects.",
-  bekmukhanRole: "Documentation & Research",
-  bekmukhanBio: "Bekmukhan enjoys basketball, studies game design, loves travelling and regularly goes to the gym."
+  teamIntro: "Meet the professionals behind CyberAware.",
+  adilbekRole: "Cybersecurity & Digital Technology Specialist",
+  adilbekBio: "Adilbek Kantarbay specializes in cybersecurity, digital technology, and web development, with experience in social media marketing and digital communication. As a co-founder of CyberAware, he focuses on website development, interface design, API integration, deployment, and project coordination.",
+  bekmukhanRole: "Cybersecurity Research & Documentation Specialist",
+  bekmukhanBio: "Bekmukhan Oryn focuses on cybersecurity research, technical documentation, and digital technologies. As a co-founder of CyberAware, he contributes to technical implementation, cybersecurity research, and the preparation of project documentation."
 });
 
 Object.assign(strings.ru, {
   teamEyebrow: "НАША КОМАНДА",
   teamTitle: "О нас",
-  teamIntro: "Познакомьтесь с командой CyberAware.",
-  adilbekRole: "Разработка и управление проектом",
-  adilbekBio: "Адильбек изучает кибербезопасность, ранее учился на бизнес-менеджменте в Дубае и занимается SMM. Любит общение, технологии и творческие проекты.",
-  bekmukhanRole: "Документация и исследования",
-  bekmukhanBio: "Бекмухан увлекается баскетболом, изучает гейм-дизайн, любит путешествовать и регулярно посещает спортзал."
+  teamIntro: "Познакомьтесь со специалистами, стоящими за CyberAware.",
+  adilbekRole: "Специалист по кибербезопасности и цифровым технологиям",
+  adilbekBio: "Адильбек Кантарбай специализируется на кибербезопасности, цифровых технологиях и веб-разработке, имеет опыт в SMM и цифровых коммуникациях. Как сооснователь CyberAware, он отвечает за разработку сайта, дизайн интерфейса, интеграцию API, развёртывание и координацию проекта.",
+  bekmukhanRole: "Специалист по исследованиям в кибербезопасности и технической документации",
+  bekmukhanBio: "Бекмухан Орын занимается исследованиями в области кибербезопасности, технической документацией и цифровыми технологиями. Как сооснователь CyberAware, он участвует в технической реализации проекта, исследовании киберугроз и подготовке документации."
 });
 
 Object.assign(strings.kk, {
   teamEyebrow: "БІЗДІҢ КОМАНДА",
   teamTitle: "Біз туралы",
-  teamIntro: "CyberAware жобасының командасымен танысыңыз.",
-  adilbekRole: "Әзірлеу және жобаны басқару",
-  adilbekBio: "Әділбек киберқауіпсіздікті оқиды, бұрын Дубайда бизнес-менеджмент саласында білім алған және SMM саласында жұмыс істейді. Қарым-қатынасты, технологияларды және шығармашылық жобаларды ұнатады.",
-  bekmukhanRole: "Құжаттама және зерттеу",
-  bekmukhanBio: "Бекмұхан баскетболмен айналысады, ойын дизайнын үйренеді, саяхаттағанды ұнатады және спортзалға тұрақты барады."
+  teamIntro: "CyberAware жобасын жасаған мамандармен танысыңыз.",
+  adilbekRole: "Киберқауіпсіздік және цифрлық технологиялар маманы",
+  adilbekBio: "Әділбек Қантарбай киберқауіпсіздік, цифрлық технологиялар және веб-әзірлеу салаларына маманданған. Оның SMM және цифрлық коммуникациялар саласында тәжірибесі бар. CyberAware жобасының тең құрылтайшысы ретінде ол веб-сайтты әзірлеуге, интерфейс дизайнына, API интеграциясына, сайтты орналастыруға және жобаны үйлестіруге жауап береді.",
+  bekmukhanRole: "Киберқауіпсіздікті зерттеу және техникалық құжаттама маманы",
+  bekmukhanBio: "Бекмұхан Орын киберқауіпсіздік зерттеулерімен, техникалық құжаттамамен және цифрлық технологиялармен айналысады. CyberAware жобасының тең құрылтайшысы ретінде ол техникалық іске асыруға, киберқауіптерді зерттеуге және жоба құжаттамасын дайындауға үлес қосады."
 });
 
 applyLanguage();
